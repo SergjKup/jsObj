@@ -1,7 +1,7 @@
 function sequence(start = 0, step = 1) {
   start -= step; // -1
   return function() {
-    return (start += step);
+    return start += step;
   };
 }
 var generator = sequence(10, 3);
